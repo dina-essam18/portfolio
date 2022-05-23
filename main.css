@@ -1,0 +1,94 @@
+body {
+    background-color: #1f2235;
+    height: 100vh;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+
+ul li {
+    padding-left: 90px;
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar-nav .nav-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    background-color: #ffc107;
+    transition: width 0.5s;
+}
+
+.navbar-nav .nav-item:hover {
+    opacity: 0.9;
+}
+
+.navbar-nav .nav-item:hover::after {
+    width: 50%;
+}
+
+.header-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.header-image {
+    height: 615px;
+}
+#about{
+    background-color: #313552;
+    border-radius: 0.5%;
+
+}
+#social-media{
+    margin-top: 40px;
+    padding: 50px 0;
+    background-color: #313552;
+}
+
+span {
+    color: #ffc107;
+}
+
+
+#form {
+    width: 60%;
+    height: 30%;
+    margin: 50px auto;
+    padding: 40px 40px;
+    background-color: #343a40;
+    border: solid #ffc107;
+    border-radius: 2%;
+}
+
+form .submit {
+    margin: 0 auto;
+}
+#linkedin,#github,#youtube{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    width: 20%;
+    padding: 15px ;
+    border: solid #ffc107;
+    border-radius: 5%;
+    margin: 0 4px;
+
+
+
+}
+#text-footer{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #6c757d;
+
+}
